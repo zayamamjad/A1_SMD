@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor_grey"
+
+    tools:context=".ReceiverInformationForm">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_background"
+        android:fontFamily="@font/alata"
+        android:paddingVertical="10dp"
+        android:paddingLeft="20dp"
+        android:text="@string/receiver_details"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+    android:id="@+id/email"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title1"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext_background"
+            android:fontFamily="@font/alata"
+            android:hint="@string/email"
+
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+    android:id="@+id/fullname"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/full_name"
+            android:id="@+id/input_fullname"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/alata"
+            android:layout_marginHorizontal="25dp"
+
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fullname"
+        android:id="@+id/tilContact"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/contact_information"
+            android:id="@+id/input_contactinfo"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/alata"
+            android:layout_marginHorizontal="25dp"
+
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tilContact"
+        android:id="@+id/tilCountry"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Country"
+            android:id="@+id/input_country"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/alata"
+            android:layout_marginHorizontal="25dp"
+
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tilCountry"
+        android:id="@+id/tilAddress"
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:id="@+id/input_address"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/alata"
+            android:layout_marginHorizontal="25dp"
+
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:backgroundTint="@color/RedColor"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:fontFamily="@font/alata"
+        android:layout_marginHorizontal="80dp"
+        android:layout_below="@id/tilAddress"
+        android:layout_marginTop="24dp"/>
+</RelativeLayout>

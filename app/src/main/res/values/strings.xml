@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Assignment1</string>
+    <string name="receiver_details">RECEIVER\nDETAILS</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="contact_information">Contact Information</string>
+    <string name="sender_ndetails">SENDER\nDETAILS</string>
+</resources>
